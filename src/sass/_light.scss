@@ -1,0 +1,28 @@
+.light {
+  background-color: $white;
+
+  .topbar,
+  .main-pannel-top,
+  .right-pannel,
+  .right-pannel-top-wrp button:hover,
+  .right-pannel-top-wrp button.active,
+  .main-pannel-left,
+  .main-pannel-right-item {
+    background-color: $bg-light;
+  }
+
+  .search-bar,
+  .file-upload,
+  .topbar-left > button,
+  .topbar-right > button,
+  .main-pannel-top .left label,
+  .main-pannel-top .right button,
+  .main-pannel-top .right .separator,
+  .right-pannel-top-wrp,
+  .right-pannel .property-body-item input,
+  .right-pannel .property-bottom .warning,
+  .main-pannel-right-item .left-item,
+  .main-pannel-right-item .right-item {
+    background-color: $bg-2-light;
+  }
+}
