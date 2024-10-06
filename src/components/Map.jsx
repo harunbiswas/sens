@@ -16,7 +16,7 @@ const MarkerMap = () => {
         {...viewState}
         onMove={(evt) => setViewState(evt.viewState)}
         style={{ width: "100%", height: "100%" }}
-        mapStyle="mapbox://styles/mapbox/streets-v11"
+        mapStyle="mapbox://styles/mapbox/satellite-v9"
         mapboxAccessToken={process.env.VITE_MAP_APIKEY} // Use environment variable for the token
       >
         <Marker longitude={-74.006} latitude={40.7128} anchor="bottom">
