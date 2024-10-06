@@ -8,7 +8,6 @@ import { TiLocationOutline } from "react-icons/ti";
 import { Link } from "react-router-dom";
 
 export default function Topbar({ theme, setTheme }) {
-  console.log(theme);
   return (
     <div className="topbar">
       <div className="topbar-left">
