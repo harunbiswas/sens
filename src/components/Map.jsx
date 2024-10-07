@@ -2,6 +2,7 @@
 import "mapbox-gl/dist/mapbox-gl.css"; // Import Mapbox CSS
 import { useState } from "react";
 import Map, { Marker } from "react-map-gl";
+import Sensor from "./Sensor";
 
 const MarkerMap = () => {
   const [viewState, setViewState] = useState({
@@ -9,6 +10,8 @@ const MarkerMap = () => {
     latitude: 40.7128,
     zoom: 18,
   });
+
+  const [isSensor, setIsSensor] = useState(true);
 
   const [mapStyle, setMapStyle] = useState(
     "mapbox://styles/mapbox/streets-v11"
@@ -69,6 +72,7 @@ const MarkerMap = () => {
           />
         </Marker>
       </Map>
+      {isSensor && <Sensor isSensor={isSensor} setIsSensor={setIsSensor} />}
     </div>
   );
 };
